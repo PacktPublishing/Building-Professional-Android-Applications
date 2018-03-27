@@ -1,0 +1,26 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.packt.madev.portfolio.list.PortfolioListData" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.packt.madev.portfolio.list.StockPortfolioListFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/portfolio_summary_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{data.summaryText}" />
+
+    </FrameLayout>
+</layout>
+
+
