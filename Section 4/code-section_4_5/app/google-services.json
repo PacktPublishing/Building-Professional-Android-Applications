@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "13257030294",
+    "firebase_url": "https://mastering-android-development.firebaseio.com",
+    "project_id": "mastering-android-development",
+    "storage_bucket": "mastering-android-development.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13257030294:android:9faa5a6e6de56305",
+        "android_client_info": {
+          "package_name": "com.packt.madev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13257030294-7q34ah0tap31e5793iv7sh69ccqekfe5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL2EGMpSRPD9NLiaUrV57cJCwSGA4p-0g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

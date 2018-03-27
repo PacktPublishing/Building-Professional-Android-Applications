@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dp"
+        app:contentPadding="10dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/portfolio_item_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOOG"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/portfolio_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2012-02-02"
+                app:layout_constraintTop_toBottomOf="@id/portfolio_item_symbol" />
+
+
+            <TextView
+                android:id="@+id/portfolio_item_last_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19.99"
+                android:textSize="26sp"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/portfolio_item_share_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="10.0"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/portfolio_item_last_price" />
+
+            <TextView
+                android:id="@+id/portfolio_item_share_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. of shares: "
+                app:layout_constraintRight_toLeftOf="@+id/portfolio_item_share_count"
+                app:layout_constraintTop_toTopOf="@id/portfolio_item_share_count" />
+
+            <TextView
+                android:id="@+id/portfolio_item_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.99"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/portfolio_item_share_count" />
+
+            <TextView
+                android:id="@+id/portfolio_item_value_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value: "
+                app:layout_constraintRight_toLeftOf="@+id/portfolio_item_value"
+                app:layout_constraintTop_toTopOf="@id/portfolio_item_value" />
+
+            <com.packt.madev.portfolio.list.views.ProgressRadial
+                android:id="@+id/portfolio_item_value_portion"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/portfolio_item_value_label"
+                app:progress="0.44"
+                app:progressColor="#d45454" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="view"
+            type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.packt.madev.portfolio.list.StockViewModel" />
+
+        <variable
+            name="data"
+            type="com.packt.madev.portfolio.list.PortfolioListData" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.packt.madev.portfolio.list.StockPortfolioListFragment">
+
+        <FrameLayout
+            android:id="@+id/portfolio_summary_purchased_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{data.summaryActive ? view.VISIBLE : view.GONE}">
+
+            <TextView
+                android:id="@+id/portfolio_summary_portfolio_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:text="@{data.portfolioValue}"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/portfolio_summary_not_purchased_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{data.summaryActive ? view.GONE : view.VISIBLE}">
+
+            <Button
+                android:id="@+id/portfolio_summary_purchase_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{model::onPurchaseRequest}"
+                android:text="Buy to enable" />
+        </FrameLayout>
+
+    </FrameLayout>
+</layout>
+
+
