@@ -50,3 +50,7 @@ JVM: Java SE 6
 
 * [Learning React with Redux and Flux [Video]](https://www.packtpub.com/web-development/learning-react-redux-and-flux-video?utm_source=github&utm_medium=repository&utm_campaign=9781787285996)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781786464644">https://packt.link/free-ebook/9781786464644 </a> </p>
